@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Poiret+One&display=swap" rel="stylesheet">
+    <title>Login Form</title>
+</head>
+<body>
+    <button id="loginBtn" onclick="document.getElementById('modalId').style.display='block'" type="button">Login</button>
+
+    <div id="modalId" class="modal">
+        <span class="close" onclick="document.getElementById('modalId').style.display='none'" title="Close modal" >&times;</span>
+
+        <form class="modal-content" action="">
+            <div class="h1Container">
+                <h1>Login</h1>
+            </div>
+
+            <div class="container">
+                <input type="text" placeholder="Username" name="uname" required><br>
+                <input type="password" placeholder="Password" name="psw"
+                required>
+                <label>
+                    <input id="rememberBox" type="checkbox" checked="checked" name="remember">Remember me
+                </label><br>
+                <button type="submit">Login</button>
+            </div>
+
+            <div class="container">
+                <button class="cancelBtn" type="button" onclick="document.getElementById('madalId').style.display='none'" >Cancel</button><br>
+                <span class="psw">Forgot <a style="color: white;" href="https://github.com/isaiUwU">password</a>?</span>
+            </div>
+        </form>
+    </div>
+    <footer>@isaiUwU GitHub</footer>
+    <script src="script.js"></script>
+</body>
+</html>

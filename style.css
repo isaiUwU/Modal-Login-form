@@ -1,0 +1,116 @@
+body {
+    font-family: sans-serif;
+    background: whitesmoke;
+    background-repeat: no-repeat;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+}
+
+button {
+    width: 200px;
+    height: 27px;
+    border-radius: 15px;
+    border: none;
+    background: rgba(255, 255, 255, 0.6);
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 60px;
+}
+
+.modal-content {
+    margin: 5px auto;
+    border-radius: 2px;
+    border: none;
+    background: rgb(44, 44, 44);
+    max-width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 4px 7px 11px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    font-size: 10px;
+    color: white;
+    font-family: "roboto", sans-serif;
+}
+
+.container input {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    height: 22px;
+    width: 200px;
+}
+
+.container label {
+    width: 200px;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.h1Container {
+    color: white;
+    font-family: 'Poiret One', cursive;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: gray;
+    font-size: 25px;
+}
+
+.close:hover, .close:focus {
+    color: lightgray;
+    cursor: pointer;
+}
+
+#rememberBox{
+    height: 8px;
+    width: 8px;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width:480px) {
+    .modal-content {
+        width: 80%;
+    }
+}
+
+footer {
+    color: white;
+    font-family: "poiret one", cursive;
+}
